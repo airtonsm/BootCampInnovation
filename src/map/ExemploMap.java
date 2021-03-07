@@ -20,25 +20,27 @@ public class ExemploMap {
 		mundial.put("França", 2);
 		mundial.put("Inglaterra", 1);
 		mundial.put("Espanha", 1);
-		
+		mundial.put("Chile", null);
 		System.out.println(mundial);
+		
+		
 		
 		mundial.put("Brasil", 5); // pode set usado para atualizar
 		
 		System.out.println(mundial);
 		
 		// retorna a chave valor
-		System.out.println(mundial.get("Argentina")); 
+		System.out.println(mundial.get("peru")); 
 		
 		// retorna chave para o objeto, boolean
-		System.out.println(mundial.containsKey("Belgica"));
+		System.out.println(mundial.containsKey("Brasil"));
 		
 		mundial.remove("França");
 		
 		System.out.println(mundial);
 		
 		//verifica se algum chave possui a valor especificada, boolean
-		System.out.println(mundial.containsValue(6));
+		System.out.println(mundial.containsValue(5));
 		
 		// retorna tamanho do mapa
 		System.out.println(mundial.size());
@@ -50,7 +52,7 @@ public class ExemploMap {
 		for(String key : mundial.keySet()) {
 			System.out.println(key + "--" + mundial.get(key));
 		}
-		
+
 		
 		
 	}
